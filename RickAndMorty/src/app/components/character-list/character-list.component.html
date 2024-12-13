@@ -1,3 +1,4 @@
+<!-- RickAndMorty/src/app/components/character-list/character-list.component.html -->
 <div class="character-list">
   <div *ngFor="let character of characters" class="character-card">
     <img [src]="character.image" alt="{{ character.name }}">
@@ -8,4 +9,10 @@
       <p class="line4">Gender: {{ character.gender }}</p>
     </div>
   </div>
-</div><!---->
+</div>
+
+<div class="pagination">
+  <button (click)="goToPage(currentPage - 1)" [disabled]="!info.prev">Previous</button>
+  <span>Page {{ currentPage }} of {{ info.pages }}</span>
+  <button (click)="goToPage(currentPage + 1)" [disabled]="!info.next">Next</button>
+</div>
