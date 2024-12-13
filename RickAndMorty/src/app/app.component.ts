@@ -1,3 +1,4 @@
+// RickAndMorty/src/app/app.component.ts
 import { Component } from '@angular/core';
 import { CharacterListComponent } from './components/character-list/character-list.component';
 

@@ -18,8 +18,8 @@ export class CharacterListComponent implements OnInit {
 
   constructor(
     private rickAndMortyService: RickAndMortyService,
-    private route: ActivatedRoute,
-    private router: Router
+    public route: ActivatedRoute,
+    public router: Router
   ) {}
 
   ngOnInit(): void {
