@@ -29,9 +29,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./RickAndMorty
 
-      - name: Run tests
+      - name: Run unit tests
         run: npm test
+        working-directory: ./RickAndMorty
 
       - name: Run end-to-end tests
         run: npm run e2e
