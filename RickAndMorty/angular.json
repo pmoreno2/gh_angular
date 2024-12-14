@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/rick-and-morty",
+            "outputPath": "dist/RickAndMorty",
             "baseHref": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -52,7 +52,7 @@
               "outputHashing": "all",
             },
             "github-pages": {
-              "baseHref": "/rick-and-morty/",
+              "baseHref": "/gh_angular/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
